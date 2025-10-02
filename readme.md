@@ -2,38 +2,40 @@
 
 This project implements a deep learning model to detect implicit hate speech in text. This repository contains the code and resources for this by implementing a novel framework that leverages Supervised Contrastive Learning, attention mechanisms, and emotion synthesis to identify subtle and indirect forms of hate speech in text. It leverages a pre-trained BERT model for robust feature extraction and incorporates advanced data augmentation techniques to achieve state-of-the-art performance, surpassing existing benchmarks by 5-10% in Accuracy and F1 Score.
 
-The core methodology and findings are detailed in our research paper: [Leveraging Supervised Contrastive Learning with Attention Mechanisms and Emotion Synthesis for Detecting Implicit Hate Speech](https://www.google.com/search?q=./paper/Implicit_Hate_Speech_Paper.pdf).
+The core methodology and findings are detailed in our research paper: [Leveraging Supervised Contrastive Learning with Attention Mechanisms and Emotion Synthesis for Detecting Implicit Hate Speech](./paper/Implicit_Hate_Speech_Paper.pdf).
 
 ## **Project Structure**
-
-Implicit-Hate-Speech-Detection/  
+```
+Implicit-Hate-Speech-Detection 
 │  
 ├── data/  
-│   └── .gitkeep                 \# Directory for datasets (ignored by Git).  
+│   └── .gitkeep                             \# Directory for datasets (ignored by Git).  
 │  
 ├── notebooks/  
-│   └── main\_analysis.ipynb      \# Main Jupyter Notebook with the full analysis workflow.  
+│   └── main_analysis.ipynb                  \# Main Jupyter Notebook with the full analysis workflow.  
 │  
 ├── paper/  
-│   └── Implicit\_Hate\_Speech\_Paper.pdf  \# The complete research paper for the project.  
+│   └── Implicit_Hate_Speech_Paper.pdf       \# The complete research paper for the project.  
 │  
 ├── results/  
-│   ├── class\_distribution.png     \# Visualization of the dataset class distributions.  
-│   ├── model\_architecture.png     \# The system architecture diagram.  
-│   └── final\_metrics.txt        \# A summary of the final model performance.  
+│   ├── class_distribution.                  \# Visualization of the dataset class distributions.  
+│   ├── model_architecture.png               \# The system architecture diagram.  
+│   └── final_metrics.txt                    \# A summary of the final model performance.
+│   └── performance_comparison_ishate.png    \# Tabular Comparision & Analysis.  
 │  
 ├── src/  
-│   ├── \_\_init\_\_.py              \# Makes 'src' a Python package.  
-│   ├── data\_processing.py       \# Functions for loading and preparing data.  
-│   ├── model.py                 \# The PyTorch model definition.  
-│   └── train.py                 \# Functions for the training and evaluation loop.  
+│   ├── __init__.py                          \# Makes 'src' a Python package.  
+│   ├── data_processing.py                   \# Functions for loading and preparing data.  
+│   ├── model.py                             \# The PyTorch model definition.  
+│   └── train.py                             \# Functions for the training and evaluation loop.  
 │  
-├── README.md                      \# This overview file.  
-└── requirements.txt               \# A list of all necessary Python libraries.
+├── README.md                                \# This overview file.  
+└── requirements.txt                         \# Required Python libraries to run the project.
+```
 
 ## **Technologies & Tools**
 
-* **Primary Language:** Python 3  
+* **Primary Language:** Python  
 * **Core Libraries:**  
   * **TensorFlow / Keras:** For building and training the deep learning model.  
   * **Hugging Face Transformers:** For using the pre-trained BERT model (bert-base-uncased).  
@@ -66,28 +68,31 @@ This confirms that the combination of data augmentation, emotion synthesis, and 
 ## **How to Run**
 
 1. **Clone the Repository:**  
-   git clone \[https://github.com/your-username/Implicit-Hate-Speech-Detection.git\](https://github.com/your-username/Implicit-Hate-Speech-Detection.git)  
+   ```
+    git clone [https://github.com/harshith1801/Implicit-Hate-Speech-Detection.git\](https://github.com/harshith1801/Implicit-Hate-Speech-Detection.git)  
    cd Implicit-Hate-Speech-Detection
-
+   ```
 2. **Set up a Virtual Environment (Recommended):**  
+```
    python \-m venv venv  
-   source venv/bin/activate  \# On Windows, use \`venv\\Scripts\\activate\`
-
+   source venv/bin/activate    \# On Windows, use \`venv\\Scripts\\activate\`
+```
 3. **Install Dependencies:**  
+```
    pip install \-r requirements.txt
-
+```
 4. **Add the Dataset:**
 
-This repository does not include the data files. Please download the required datasets (cleaned\_train\_new\_final.csv and implicit\_test.csv) and place them inside the data/ folder. *You can find the datasets from the original source or a public repository where they are hosted.*
+This repository does not include the data files. Please download the required datasets ```(cleaned_train_new_final.csv)``` and ```(implicit_test.csv)``` and place them inside the ```data``` folder. *You can find the datasets from the original source or a public repository where they are hosted.*
 
 5. **Run the Jupyter Notebook:**  
    Launch Jupyter and open the main analysis notebook.
-
-jupyter notebook notebooks/main\_analysis.ipynb
-
+```
+jupyter notebook notebooks/main_analysis.ipynb
+```
 You can then run the cells in the notebook to execute the full data processing, training, and evaluation pipeline.
 
 ## **Documentation**
 
-* A full, in-depth explanation of the methodology, experiments, and results is available in the [**research paper**](https://www.google.com/search?q=./paper/Implicit_Hate_Speech_Paper.pdf) located in the `paper/` directory.
+A full, in-depth explanation of the methodology, experiments, and results is available in the **research paper** located in the `paper/` directory.
 
