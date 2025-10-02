@@ -1,0 +1,7 @@
+Key Performance on ISHate Dataset (Proposed Method):
+
+- Overall Accuracy: 88.9%
+
+- Implicit Hate Speech F1-Score: 61.2%
+- Explicit Hate Speech F1-Score: 85.6%
+- Non-Hate Speech F1-Score: 92.6%
